@@ -113,5 +113,5 @@ particlesJS("particles-js", {
 
 
 function getPage(pageName){
-   window.location.href =  window.location.href.split('.')[0] + '/' + pageName + '.html';
+   window.location.href =  window.location.href.split('.html')[0] + '/' + pageName + '.html';
 }
