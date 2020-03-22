@@ -9,13 +9,17 @@ body {
   position: relative;
   font-family: 'Montserrat', sans-serif;
   background-color: #060407;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
-h1, h2, h3, h4, h5, h6{
+h1, h2, h3, h4, h5, h6 {
   font-family: 'Caveat', cursive;
 }
 
-.background{
+.background {
   background-attachment: fixed;
   min-height: 100%;
   background-position: center;
@@ -24,7 +28,6 @@ h1, h2, h3, h4, h5, h6{
   color: white;
   position: relative;
   z-index: 4;
-
 }
 
 .home-screen, .contact-screen {
@@ -39,13 +42,11 @@ h1, h2, h3, h4, h5, h6{
   background-image: url("images/Nacht.JPG");
 }
 
-
-
 /* ---- particles.js container ---- */
 #particles-js {
   position: absolute;
   width: 100%;
-  height: 90%;
+  height: 100%;
 }
 
 /* ---- nav bar ---- */
@@ -55,7 +56,7 @@ h1, h2, h3, h4, h5, h6{
   margin-left: 20px;
 }
 
-.disabled{
+.disabled {
   color: #61B22F !important;
   font-weight: bolder;
 }
@@ -81,6 +82,7 @@ h1, h2, h3, h4, h5, h6{
   transform: translate(-50%, -50%);
 }
 
+/* .........HOME SCREEN.........  */
 .title {
   text-align: right;
   padding-right: 10%;
@@ -108,88 +110,87 @@ h1, h2, h3, h4, h5, h6{
   -o-animation: bounce 2s infinite linear;
   -webkit-animation: bounce 2s infinite linear;
   animation: bounce 2s infinite linear;
-
 }
 
 .img-zzzumi {
   max-height: 200px;
 }
 
-.title-button{
-  background-color:  #61B22F;
+.title-button {
+  background-color: #61B22F;
   padding: 20px 30px;
   border-radius: 37px;
   margin: 0 20px;
 }
 
-.title-button:hover{
+.title-button:hover {
   background-color: #366618;
 }
 
 /* #A66812 #6A2365 #8667AB*/
 /* Extras screen */
-
-.extra-body{
+.extra-body {
   background-color: #61B22F;
-
 }
 
-.extra-subheading{
+.extra-subheading {
   font-size: 3rem;
   color: #6A2365;
 }
-.extra-heading{
+
+.extra-heading {
   font-size: 4rem;
   color: #6A2365;
 }
 
-.cardrow{
+.cardrow {
   margin: 0;
 }
 
-.card{
+.card {
   border: 3px solid #8667AB;
   background-color: #61B22F;
   margin: 50px auto;
+  cursor: pointer;
 }
 
+.card:hover {
+  border: 5px solid #8667AB;
+}
 
-/* AUTHOR SCREEN */
-
-.author-body{
+/* ...........AUTHOR SCREEN................ */
+.author-body {
   background-color: #6B5593;
 }
 
-.authorrow{
+.authorrow {
   width: 100%;
   margin: 100px 0;
 }
 
-.img-janet{
+.img-janet {
   text-align: right;
   padding-right: 10%;
 }
 
-.janet-text{
+.janet-text {
   text-align: left;
   padding-right: 10%;
 }
 
-
-/* **********FOOTER */
-.footer{
-
+/* ................FOOTER........... */
+.footer {
   position: absolute;
   bottom: 0;
   width: 100%;
 }
 
-.footerlink{
+.footerlink {
   text-decoration: none;
   color: white;
 }
 
-.footerlink:hover{
+.footerlink:hover {
   text-decoration: none;
   color: #6A2365;
 }
@@ -211,7 +212,6 @@ h1, h2, h3, h4, h5, h6{
     max-height: 150px;
   }
 
-
   .navbar {
     z-index: 5;
   }
@@ -221,12 +221,10 @@ h1, h2, h3, h4, h5, h6{
     opacity: 0.8;
     z-index: 5;
   }
-
-
 }
 
+@media screen and (max-width: 767px) {
 
-@media screen and (max-width: 767px){
   /* start of tablet styles */
   .big-heading {
     color: #61B22F;
@@ -245,16 +243,14 @@ h1, h2, h3, h4, h5, h6{
     max-width: 150px;
   }
 
-  .title-img{
+  .title-img {
     margin: 10px auto;
   }
 
-  .title-button{
+  .title-button {
     display: block;
     margin: 30px;
   }
-
-
 }
 
 @media screen and (max-width: 479px) {
@@ -277,21 +273,19 @@ h1, h2, h3, h4, h5, h6{
     max-width: 150px;
   }
 
-  .title-img{
+  .title-img {
     margin: 10px auto;
   }
 
-  .title-button{
+  .title-button {
     display: block;
     margin: 30px;
   }
 
-
-  .img-janet{
+  .img-janet {
     text-align: center;
     margin-bottom: 50px;
   }
-
 }
 
 @-webkit-keyframes bounce {

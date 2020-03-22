@@ -109,3 +109,9 @@ particlesJS("particles-js", {
   },
   "retina_detect": true
 });
+
+
+
+function getPage(pageName){
+   window.location.href =  window.location.href.split('.')[0] + '/' + pageName + '.html';
+}
