@@ -15,16 +15,28 @@ h1, h2, h3, h4, h5, h6{
   font-family: 'Caveat', cursive;
 }
 
-.home-screen {
-  background-image: url("images/Nacht2.JPG");
+.background{
   background-attachment: fixed;
-  height: 100%;
+  min-height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
   position: relative;
   z-index: 4;
+
+}
+
+.home-screen, .contact-screen {
+  background-image: url("images/Nacht2.JPG");
+}
+
+.extra-screen, .book-screen {
+  background-image: url("images/Dag.JPG");
+}
+
+.author-screen {
+  background-image: url("images/Nacht.JPG");
 }
 
 
@@ -36,6 +48,7 @@ h1, h2, h3, h4, h5, h6{
   height: 90%;
 }
 
+/* ---- nav bar ---- */
 .nav-link {
   color: #8667AB !important;
   font-size: 24px;
@@ -121,18 +134,6 @@ h1, h2, h3, h4, h5, h6{
 
 }
 
-.extra-screen {
-  background-image: url("images/Dag.JPG");
-  background-attachment: fixed;
-  height: 180%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: white;
-  position: relative;
-  z-index: 4;
-}
-
 .extra-subheading{
   font-size: 3rem;
   color: #6A2365;
@@ -158,18 +159,6 @@ h1, h2, h3, h4, h5, h6{
 .author-body{
   background-color: #6B5593;
 }
-.author-screen {
-  background-image: url("images/Nacht.JPG");
-  background-attachment: fixed;
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: white;
-  position: relative;
-  z-index: 4;
-}
-
 
 .authorrow{
   width: 100%;
@@ -186,12 +175,30 @@ h1, h2, h3, h4, h5, h6{
   padding-right: 10%;
 }
 
+
+/* **********FOOTER */
+.footer{
+
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.footerlink{
+  text-decoration: none;
+  color: white;
+}
+
+.footerlink:hover{
+  text-decoration: none;
+  color: #6A2365;
+}
+
 /* start of desktop styles */
 @media screen and (max-width: 991px) {
   .big-heading {
     color: #61B22F;
     font-size: 4rem;
-
   }
 
   .sub-heading {
@@ -215,9 +222,7 @@ h1, h2, h3, h4, h5, h6{
     z-index: 5;
   }
 
-  .extra-screen{
-    height: 250%;
-  }
+
 }
 
 
@@ -246,13 +251,10 @@ h1, h2, h3, h4, h5, h6{
 
   .title-button{
     display: block;
-
     margin: 30px;
   }
 
-  .extra-screen{
-    height: 300%;
-  }
+
 }
 
 @media screen and (max-width: 479px) {
@@ -280,14 +282,10 @@ h1, h2, h3, h4, h5, h6{
   }
 
   .title-button{
-
     display: block;
     margin: 30px;
   }
 
-  .extra-screen{
-    height: 400%;
-  }
 
   .img-janet{
     text-align: center;
