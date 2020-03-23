@@ -19,6 +19,10 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Caveat', cursive;
 }
 
+.main-section {
+  padding-bottom: 15px;
+}
+
 .background {
   background-attachment: fixed;
   min-height: 100%;
@@ -183,11 +187,65 @@ h1, h2, h3, h4, h5, h6 {
   padding-right: 10%;
 }
 
+
+/* .............CONTACT SCREEN......... */
+
+.contact-section{
+  margin: 3% 0 20px;
+}
+
+.contact-form{
+  text-align: center;
+}
+
+.form-control{
+
+  /* background-color: #fff; */
+  background-color: rgba(255,255,255,0.2);
+  /* border-top: none !important;
+  border-right: none !important;
+  border-bottom: 3px solid  #6B5593 !important; */
+  border: none;
+}
+
+/* .form-group{
+  text-align: right !important;
+
+} */
+
+.contact-info{
+  text-align: left;
+  line-height: 2;
+}
+
+.heading-contact{
+  color: #15ACE1;
+  font-size: 5rem;
+  padding-bottom: 50px;
+}
+
+.heading-contact-info{
+  text-align: left;
+}
+
+.contact-button {
+  background-color: #61B22F;
+  padding: 15px 20px;
+  border-radius: 37px;
+  margin: 20px 0;
+}
+
+.contact-button:hover {
+  background-color: #366618;
+}
+
+
 /* ................FOOTER........... */
 .footer {
   position: absolute;
   bottom: 0;
   width: 100%;
+
 }
 
 .footerlink {

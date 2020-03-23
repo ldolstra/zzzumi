@@ -14,7 +14,7 @@
 <body>
 
   <div class="contact-screen background">
-    <div class="container-fluid">
+    <div class="container-fluid main-section">
       <nav class="navbar navbar-expand-lg navbar-dark">
         <a class="navbar-brand" href="index.html"> <img src="images/logo.JPG" class="logo" alt="Zzzumi-logo"> </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,6 +41,49 @@
           </ul>
         </div>
       </nav>
+
+      <div class="container-fluid contact-section">
+          <h1 class="heading-contact">Contact</h1>
+        <div class="row">
+
+          <div class="col-sm-6 offset-sm-1 contact-form">
+      
+            <form>
+              <div class="form-group">
+                <label for="inputName">Wat is je naam?</label>
+                <input type="text" class="form-control" id="inputName">
+              </div>
+              <div class="form-group">
+                <label for="inputEmail">Wat is je email adres?</label>
+                <input type="email" class="form-control" id="inputEmail" placeholder="voorbeeld@provider.nl">
+              </div>
+              <div class="form-group">
+                <label for="inputSubject">Wat is het onderwerp van je bericht?</label>
+                <input type="text" class="form-control" id="inputSubject">
+              </div>
+              <div class="form-group">
+                <label for="inputMessage">Schrijf hier je bericht!</label>
+                <textarea class="form-control" id="inputMessage" rows="4"></textarea>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="nieuwsbrief">
+                <label class="form-check-label" for="nieuwsbrief">Ja! Ik wil mailtjes ontvangen met nieuws over Zzzumi!</label>
+              </div>
+              <button type="submit" class="contact-button btn btn-dark btn-lg">Verstuur mijn bericht!</button>
+            </form>
+          </div>
+          <div class="col-sm-3 offset-sm-1 contact-info">
+            <h2 class="heading-contact-info">Contact informatie</h2>
+            <p>
+              Janet Korpershoek<br />
+              Oosterveen 27<br />
+              7711 BN Nieuwleusen<br />
+              Tel. 06 - 41 15 08 97<br />
+              info@galeriekorpershoek.nl<br />
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
 
 
